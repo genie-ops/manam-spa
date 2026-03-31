@@ -1,0 +1,7 @@
+{
+  "name": "Manam Spa | The Desert Sanctuary",
+  "description": "A luxury spa experience in Al Khobar, offering refined rituals, beauty treatments, and a sanctuary of calm.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}

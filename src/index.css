@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+@theme {
+  --font-headline: "Noto Serif", "Amiri", serif;
+  --font-body: "Plus Jakarta Sans", "IBM Plex Sans Arabic", sans-serif;
+  --font-label: "Plus Jakarta Sans", "IBM Plex Sans Arabic", sans-serif;
+
+  --color-primary: #705b37;
+  --color-primary-container: #c2a87e;
+  --color-on-primary: #ffffff;
+  --color-surface: #fcf9f4;
+  --color-surface-bright: #fcf9f4;
+  --color-surface-dim: #dcdad5;
+  --color-surface-container: #f0ede9;
+  --color-surface-container-low: #f6f3ee;
+  --color-surface-container-high: #ebe8e3;
+  --color-surface-container-highest: #e5e2dd;
+  --color-on-surface: #1c1c19;
+  --color-on-surface-variant: #4d463c;
+  --color-outline: #7e766a;
+  --color-outline-variant: #d0c5b7;
+  --color-secondary-container: #f0dcc8;
+  --color-on-secondary-container: #6f6050;
+
+  --radius-lg: 2rem;
+  --radius-xl: 3rem;
+}
+
+@layer base {
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Amiri:wght@400;700&family=IBM+Plex+Sans+Arabic:wght@300;400;600&display=swap');
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-surface text-on-surface font-body;
+  }
+
+  .arabic-font {
+    font-family: 'Amiri', serif;
+  }
+
+  .arabic-sans {
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
+  }
+}
+
+@layer utilities {
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .hide-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
